@@ -3,16 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C9DFCE6424C183370016D428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE6324C183370016D428 /* AppDelegate.swift */; };
 		C9DFCE6624C183370016D428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE6524C183370016D428 /* SceneDelegate.swift */; };
 		C9DFCE6824C183370016D428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE6724C183370016D428 /* ViewController.swift */; };
-		C9DFCE6B24C183370016D428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DFCE6924C183370016D428 /* Main.storyboard */; };
 		C9DFCE6D24C1833B0016D428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DFCE6C24C1833B0016D428 /* Assets.xcassets */; };
 		C9DFCE7024C1833B0016D428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DFCE6E24C1833B0016D428 /* LaunchScreen.storyboard */; };
+		C9DFCE7824C183910016D428 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE7724C183910016D428 /* CoreDataStack.swift */; };
+		C9DFCE7B24C184850016D428 /* SparkUI in Frameworks */ = {isa = PBXBuildFile; productRef = C9DFCE7A24C184850016D428 /* SparkUI */; };
+		C9DFCE7E24C184D50016D428 /* CoreDataDemo5New.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE7C24C184D50016D428 /* CoreDataDemo5New.xcdatamodeld */; };
+		C9DFCE8024C185190016D428 /* CatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE7F24C185190016D428 /* CatCell.swift */; };
+		C9DFCE8224C1852D0016D428 /* CatHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE8124C1852D0016D428 /* CatHeader.swift */; };
+		C9DFCE8424C1A03A0016D428 /* CoreDataFetchedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFCE8324C1A03A0016D428 /* CoreDataFetchedResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,14 @@
 		C9DFCE6324C183370016D428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9DFCE6524C183370016D428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9DFCE6724C183370016D428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9DFCE6A24C183370016D428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9DFCE6C24C1833B0016D428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9DFCE6F24C1833B0016D428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9DFCE7124C1833B0016D428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DFCE7724C183910016D428 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C9DFCE7D24C184D50016D428 /* CoreDataDemo5New.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo5New.xcdatamodel; sourceTree = "<group>"; };
+		C9DFCE7F24C185190016D428 /* CatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCell.swift; sourceTree = "<group>"; };
+		C9DFCE8124C1852D0016D428 /* CatHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatHeader.swift; sourceTree = "<group>"; };
+		C9DFCE8324C1A03A0016D428 /* CoreDataFetchedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFetchedResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DFCE7B24C184850016D428 /* SparkUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +69,14 @@
 				C9DFCE6324C183370016D428 /* AppDelegate.swift */,
 				C9DFCE6524C183370016D428 /* SceneDelegate.swift */,
 				C9DFCE6724C183370016D428 /* ViewController.swift */,
-				C9DFCE6924C183370016D428 /* Main.storyboard */,
+				C9DFCE7F24C185190016D428 /* CatCell.swift */,
+				C9DFCE8124C1852D0016D428 /* CatHeader.swift */,
+				C9DFCE7724C183910016D428 /* CoreDataStack.swift */,
+				C9DFCE8324C1A03A0016D428 /* CoreDataFetchedResults.swift */,
 				C9DFCE6C24C1833B0016D428 /* Assets.xcassets */,
 				C9DFCE6E24C1833B0016D428 /* LaunchScreen.storyboard */,
 				C9DFCE7124C1833B0016D428 /* Info.plist */,
+				C9DFCE7C24C184D50016D428 /* CoreDataDemo5New.xcdatamodeld */,
 			);
 			path = CoreDataDemo5New;
 			sourceTree = "<group>";
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = CoreDataDemo5New;
+			packageProductDependencies = (
+				C9DFCE7A24C184850016D428 /* SparkUI */,
+			);
 			productName = CoreDataDemo5New;
 			productReference = C9DFCE6024C183370016D428 /* CoreDataDemo5New.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = C9DFCE5724C183370016D428;
+			packageReferences = (
+				C9DFCE7924C184850016D428 /* XCRemoteSwiftPackageReference "SparkUI" */,
+			);
 			productRefGroup = C9DFCE6124C183370016D428 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +147,6 @@
 			files = (
 				C9DFCE7024C1833B0016D428 /* LaunchScreen.storyboard in Resources */,
 				C9DFCE6D24C1833B0016D428 /* Assets.xcassets in Resources */,
-				C9DFCE6B24C183370016D428 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +157,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DFCE8024C185190016D428 /* CatCell.swift in Sources */,
 				C9DFCE6824C183370016D428 /* ViewController.swift in Sources */,
 				C9DFCE6424C183370016D428 /* AppDelegate.swift in Sources */,
 				C9DFCE6624C183370016D428 /* SceneDelegate.swift in Sources */,
+				C9DFCE7E24C184D50016D428 /* CoreDataDemo5New.xcdatamodeld in Sources */,
+				C9DFCE8224C1852D0016D428 /* CatHeader.swift in Sources */,
+				C9DFCE7824C183910016D428 /* CoreDataStack.swift in Sources */,
+				C9DFCE8424C1A03A0016D428 /* CoreDataFetchedResults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9DFCE6924C183370016D428 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9DFCE6A24C183370016D428 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9DFCE6E24C1833B0016D428 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,6 +354,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9DFCE7924C184850016D428 /* XCRemoteSwiftPackageReference "SparkUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/SparkUI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.11.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9DFCE7A24C184850016D428 /* SparkUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9DFCE7924C184850016D428 /* XCRemoteSwiftPackageReference "SparkUI" */;
+			productName = SparkUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C9DFCE7C24C184D50016D428 /* CoreDataDemo5New.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C9DFCE7D24C184D50016D428 /* CoreDataDemo5New.xcdatamodel */,
+			);
+			currentVersion = C9DFCE7D24C184D50016D428 /* CoreDataDemo5New.xcdatamodel */;
+			path = CoreDataDemo5New.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C9DFCE5824C183370016D428 /* Project object */;
 }
